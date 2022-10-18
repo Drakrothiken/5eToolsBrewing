@@ -1,0 +1,768 @@
+{
+	"siteVersion": "1.168.2",
+	"_meta": {
+		"sources": [
+			{
+				"json": "DrakrothikensGuidetoEdar",
+				"abbreviation": "GtoE",
+				"full": "Drakrothiken's Guide to Edar",
+				"url": "https://homebrewery.naturalcrit.com/share/5e-41hdfa4Qe",
+				"authors": [
+					"Drakrothiken"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1666074068,
+		"dateLastModified": 1666074068
+	},
+	"spell": [
+		{
+			"name": "Bend Metal",
+			"source": "DrakrothikensGuidetoEdar",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You grasp a piece of non-magical metal such as a sword or metal plate - altering its rigid structure and shifting it in your fingers as if it were clay.",
+				"The affected area of metal can be no larger than a 1-foot radius sphere. You cannot target metal that is being worn or carried by another creature. You can bend, tear, and otherwise manipulate the metal as if working with wet clay and it retains its new shape.",
+				"You can shape a sheet of metal this way into crude equipment or objects. However, any item made using this spell cannot match the quality of the work of a proper metalworker or blacksmith using smith’s tools. The work will always be crude. For example, while you can make a gear for a machine with this spell and some time, the gear shall be more likely to fail than a proper gear made with smith’s tools.",
+				"You can shape the piece of metal into a make-shift shield which will grant you a +2 to your AC like a normal shield. However, a critical hit on you while using this shield will render the improvised shield useless.",
+				"Additionally, you can shape a piece of metal into an improvised sword, spear, or club. A weapon made this way uses your Strength modifier and has a damage die of {@dice 1d4}. The damage type is determined by the weapon: Slashing for a sword, Piercing for a spear, and Bludgeoning for a club.",
+				"The damage done by a weapon made by this spell increases by a die when you reach 5th level ({@dice 1d6}), 11th level ({@dice 1d8}) and 17th level ({@dice 1d10})."
+			],
+			"damageInflict": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"miscTags": [
+				"PRM",
+				"SCL",
+				"MAC"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blackened Bullet",
+			"source": "DrakrothikensGuidetoEdar",
+			"level": 0,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a silver bullet worht at least 1sp, which the spell consumes",
+					"consume": true,
+					"cost": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You load the bullet used in the spell's casting into a firearm and make a ranged attack with it against one creature within that weapon's range.  On hit, the target suffers the weapon attack's normal effects and the bullet remains within the target's body until it can be removed.  The necrotic energies infused in the bullet then begin to slowly eat away at the target's life for 1 minute before it fades.",
+				"If the bullet remains in the target, it takes {@damage 1d4} necrotic damage at the start of each of its turns.  Any creature can remove the bullet with an action.",
+				"This spell's damage on subsequent turns increase by {@dice 1d4} when you reach 5th level, ({@dice 2d4}), 11th level ({@dice 3d4}) and 17th level ({@dice 4d4})"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"miscTags": [
+				"SGT",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blackout",
+			"source": "DrakrothikensGuidetoEdar",
+			"level": 1,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"Choose a source of non-magical light within range. For the duration of the spell, the chosen source of light is suppressed, causing it to generate no light."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you can choose an additional source of light within range for each spell slot above 1st."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blood Boil",
+			"source": "DrakrothikensGuidetoEdar",
+			"level": 0,
+			"school": "N",
+			"subschools": [
+				"Blood"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"This spell attempts to wrench the blood in a foe's body.  Choose one creature you can see within range.  That creature must make a Constitution Saving  Throw.  On a failure, it takes {@damage 1d4} necrotic damage and on each of your turns for the duration, you can use your bonus action to deal {@damage 1d4} necrotic damage to the target automatically.",
+				"Creatures without blood such as constructs are immune to the effects of this spell.",
+				"The spell's damage increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}) and 17th level ({@dice 4d4})."
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Bloody Spear",
+			"source": "DrakrothikensGuidetoEdar",
+			"level": 1,
+			"school": "N",
+			"subschools": [
+				"Blood"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You tear away some of your own blood to form a powerful spear. As part of this spell you deal {@damage 1d4 + 1} necrotic damage to yourself. Make a ranged spell attack against a creature within range. On hit, the target takes {@damage 2d10} necrotic damage.",
+				"If this damage reduces the target to 0 hit points, blood bursts from within its body, spraying nearby foes with gore and spikes of enchanted blood. Each creature within 10 feet must make a dexterity saving throw. On a failed save, a creature takes {@damage 2d6} bludgeoning damage and half as much on a successful save."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the necrotic damage increases by {@scaledice 2d10|1-9|1d10} for each spell slot above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning",
+				"necrotic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT",
+				"SCL"
+			],
+			"areaTags": [
+				"ST",
+				"C"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blood Reading",
+			"source": "DrakrothikensGuidetoEdar",
+			"level": 0,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "at least 100ml of a creature's blood",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You weave magic to pull information out of at least one ounce of blood of a creature, which the spell consumes. The blood must have come from a creature that is alive or has been dead for less than 1 hour. The spell fails without enough blood to use. Choose two of the following options below each time you cast the spell to determine what information about the creature you learn from the blood:",
+				{
+					"type": "list",
+					"items": [
+						"You learn the creature’s type and its maximum hit points. You also learn all its resistances, vulnerabilities, and immunities.",
+						"You learn the direction of the creature and you learn if it is within 1 mile, 100 miles, or beyond that (which also includes other planes of existance).",
+						"You learn the identity of any poisons, diseases, curses, and blessings that are affecting the creature. Successful knowledge checks may also grant you insight into the nature and function of these conditions.",
+						"You learn if the creature’s blood contains any special magic, such as the healing properties of unicorn’s blood or the magical potency of a sorcerer.",
+						"If the blood is mixed with the blood of another creature, the mixture will glow bright red if the two creatures are related by blood."
+					]
+				},
+				"When you cast the spell, if the target is still alive, it feels a tingling sensation in its veins and knows your general direction. However, it doesn’t necessarily know who you are or what you are doing."
+			],
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Card Throw",
+			"source": "DrakrothikensGuidetoEdar",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a playing card which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You draw a playing card and infuse it with arcane energy.  Make a ranged spell attack against the target.  On hit, the target takes {@damage 1d8} damage.  Roll a {@dice d8} to determine the damage type of the card, as shown below.",
+				{
+					"type": "table",
+					"caption": "Card Throw",
+					"colLabels": [
+						"{@dice d8}",
+						"Damage Type"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 1
+								}
+							},
+							"Acid"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 2
+								}
+							},
+							"Cold"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 3
+								}
+							},
+							"Fire"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 4
+								}
+							},
+							"Force"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 5
+								}
+							},
+							"Lightning"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 6
+								}
+							},
+							"Poison"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 7
+								}
+							},
+							"Psychic"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 8
+								}
+							},
+							"Thunder"
+						]
+					]
+				},
+				"This spell creates more than one card when you reach higher levels: two cards at 5th level, three cards at 11th level, and four cards at 17th level. You can direct the cards at the same target or different ones.  Make a separate attack for each card."
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"poison",
+				"psychic",
+				"thunder"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SGT",
+				"SCL",
+				"RO"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conflagration",
+			"source": "DrakrothikensGuidetoEdar",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "flint and some tinder"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You snap your fingers and cause fire to erupt forth in an 10-foot square centered on a point you can see in range. Every creature in the area must make a Dexterity saving throw, taking {@damage 2d6} fire damage on a failed save and half as much on a successful one.",
+				"The fire ignites any flammable objects in the area that aren't being worn or carried."
+			],
+			"entriesHigherLevel": [
+				"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledice 1d6|1-9|1d6} for every spell slot above 1st."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"Q"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			]
+		},
+		{
+			"name": "Exsanguinate",
+			"source": "DrakrothikensGuidetoEdar",
+			"level": 0,
+			"school": "N",
+			"subschools": [
+				"Blood"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You reach out an attempt to tear the blood from a foe’s body. Choose a creature you can see within range. That creature must make a Constitution Saving Throw. On a failure, it takes {@damage 1d10} necrotic damage.",
+				"Creatures without blood such as constructs are immune to the effects of this spell.",
+				"The spell’s damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}) and 17th level ({@dice 4d10})."
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Stun Shot",
+			"source": "DrakrothikensGuidetoEdar",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a silver bullet worth at least 1sp, which the spell consumes",
+					"consume": true,
+					"cost": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You load the bullet used in the spell’s casting into a firearm and make a ranged weapon attack with it against a creature in the weapon’s range. On hit, the target suffers the weapon attack’s normal effects and must make a Constitution saving throw as electricity suddenly shocks their body. On a failed save, the target is {@condition incapacitated} until the end of their next turn."
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		}
+	]
+}
