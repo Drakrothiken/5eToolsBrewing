@@ -16,6 +16,186 @@
 		"dateAdded": 1666074068,
 		"dateLastModified": 1666074068
 	},
+	"race": [
+		{
+			"name": "Kutishian",
+			"source": "DrakrothikensGuidetoEdar",
+			"ability": [
+				{
+					"str": 2,
+					"con": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"entries": [
+				"Kutishians, while varying in colors and some physical features, all have similar traits.",
+				{
+					"name": "Ability Score Increase",
+					"type": "entries",
+					"entries": [
+						"Your Strength Score increases by 2. Your Constitution goes up by 1"
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Kutishians reach maturity at the age of 18 and live to around the age of 120."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Most Kutishians are either Neutral or Good aligned. Their warrior culture focused on survival, self-improvement and focusing on their clan and kin."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Your size is medium"
+					]
+				},
+				{
+					"name": "Speed",
+					"type": "entries",
+					"entries": [
+						"Your base walking speed is 30 ft."
+					]
+				},
+				{
+					"name": "Behemoth",
+					"type": "entries",
+					"entries": [
+						"Your size counts as large for the purpose of determining carrying capacity and grappling."
+					]
+				},
+				{
+					"name": "Tooth and Claw",
+					"type": "entries",
+					"entries": [
+						"Your sharp teeth and claws are natural weapons, which you can use to make unarmed strikes in which you are proficient. If you hit with them, you can deal slashing damage equal to 1d4 + your Strength modifier with your claws, or 1d4 + your Strength modifier in piercing damage with your teeth."
+					]
+				},
+				{
+					"name": "Martial Training.",
+					"type": "entries",
+					"entries": [
+						"You are proficient with two martial weapons of your choice."
+					]
+				},
+				{
+					"name": "Natural Armor.",
+					"type": "entries",
+					"entries": [
+						"You have tough scales that go well with your natural constitution, and when you aren't wearing armor your AC is 13 + your Constitution Modifier. You may use your natural armor to determine your AC if the armor you wear would leave you with lower AC. A shield's benefits apply as normal while you use your natural armor."
+					]
+				},
+				{
+					"name": "Terrifying Roar.",
+					"type": "entries",
+					"entries": [
+						"Once per short or long rest, you can make a terrifying roar of rage, shocking your enemies into submission. All creatures within 10 feet of you must make a Wisdom Saving throw with the DC equal to 8 + constitution modifier + proficiency bonus or be frightened. Any frightened creature can repeat the saving throw at the end of each of it's turns, ending the effect on a success."
+					]
+				},
+				{
+					"name": "Languages",
+					"type": "entries",
+					"entries":[
+						"You can speak, read, and write Draconic in/and the Kutani dialect and 1 other common language."
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Random Height and Weight",
+					"colLabels": [
+						"Base Height",
+						"Base Weight",
+						"Height Modifier",
+						"Weight Modifier"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"6' 6\"",
+							"200 lbs.",
+							"+{@dice 3d6}",
+							"×{@dice 2d6}"
+						]
+					]
+				}
+			],
+			"age": {
+				"mature": 18,
+				"max": 200
+			},
+			"languageProficiencies": [
+				{
+					"draconic": true,
+					"kutani": true,
+					"other": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Her adoptive father stood at the end of the hallway. A watchful sentinel, waiting for the return of his daughter. The young human he found in swaddling clothes as an infant, abandoned during the 2nd Draco-Imperial War. Grey has started to dot the edges of his blue scales and he stood now with an ornate staff carved from the wood of a great Zokia tree. Yet, he remained as imposing and powerful as ever. She had no doubts he could still wrestle a Minotaur and come out on top. No longer did he wear that familiar steel armor that he has worn into battle for years. Now, he wore a traditional silk toga and robes, dyed in deep reds and blues with silver embroidered on the edges.",
+							"During her life, she had learned that her ability to read her father's face was a valuable skill that she had fortunately learned. Any other human would miss the arch of his eye-ridges, the subtle look in his eyes, the curve at corners of his lips. Others might only see cold indifference. As he gazed, however, upon the fresh tattoo, magically burned into the skin of her cheek and neck. His face spoke volumes to her in these quiet, seemingly isolated halls.",
+							"Then, he grabbed the sword at his hip, pulling it and the scabbard free from his belt. A sword that has been in his family for generations, passed down. And held it out to her. His daughter. His inheritor.",
+							"With only a moment's hesitation, as she looked unflinchingly into his piercing yellow gaze. She reached forward, and grasped the old blade."
+						]
+					},
+					{
+						"name": "Blood and Honor",
+						"entries": [
+							"Rivaling Minotaurs and Goliaths in strength and size, the reptilian warrior race referred to as the Kutishians tower over most Humanoid races. Rarely ever shorter than six and half feet, they sport powerful builds and frames, honed from lifehoods of training, conditioning, and battle. A Kutishian's body is their temple, and their culture focuses on honor, clanship and warriorship.",
+							"Kutishians start their martial training almost as soon as they are able to walk. Being taught to use their natural weapons: claws and teeth, Then after mastering their natural weapons, they are taught how to wield martial weapons. While spellcasters are rare amongst their kind, they are not unheard of, and such gifts are often quickly developed as well.",
+							"Kutishians hold themselves to high standards of honor, physical prowess and productivity. When not waging combat or training for the next conflict, they are practicing in their trades: farming, building, craftsmanship, among other trades. Preparing for their next challenge, preparing for battle and working for the prosperity of their clan.",
+							"Thus, their art is found within the simple elegance of their weapons, armor, and clothing. Despite the spartan design of such things, an elegance can be found in the craftsmanship that shows a Kutishian's respect to his or her equipment. Often, the armor and weapons of a Kutishian are those of an ancestor. Passed down to them, as it was passed down to their ancestor before. Many of these weapons and armor have been in so many battles, their tools used for so many generations, over the centuries that they have begun to manifest magical properties."
+						]
+					},
+					{
+						"name": "For Glory",
+						"entries": [
+							"When the Kutishian tribes merged with the growing Dracksikarian clans long ago, they brought along their own pantheon. However, most have been subsumed into the Draconic Pantheon over the generations. All, except for Jahstafa, the god of duty, unity, and discipline who was the head deity of the original Kutishian Pantheon.",
+							"A Kutishian finds honor and glory through combat, either in sparring against other warriors in their clan or against creatures that threaten it. Or through actions and trades that bring prosperity to their own clan. Things such as writing or performing great ballads and epics about the clan, or taking part in slaying a giant encroaching on their clan’s territory.",
+							"Kutishians are fiercely loyal, both to their clan and their comrades. They hold a strict code of honor that aligns with that of Dracksikar. However, amongst the Kutishians within a clan, punishment for these infractions are often swift and merciless, even more than that of the clan itself. Betrayal being one of, if not the most dishonorable action a Kutishian, or any Dracksikarian could make. If you have earned the trust, respect and companionship of a Kutishian in battle, then you have made a friend that will follow you into the depths of the abyss without so much as flinching."
+						]
+					},
+					{
+						"name": "Kutishian Names",
+						"entries": [
+							{
+								"name": "Male Names",
+								"entries": [
+									"Cemria, Alrevad, Fartik, Shanistand, Javacnek, Haxol, Jahruash, Farxol"
+								]
+							},
+							{
+								"name": "Female Names",
+								"entries": [
+									"Rahatul, Pararak, Leyli, Enkin, Timmlahe, Nasdaxi, Dorxol, Moxohavid"
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	],
 	"spell": [
 		{
 			"name": "Bend Metal",
@@ -45,7 +225,7 @@
 			"entries": [
 				"You grasp a piece of non-magical metal such as a sword or metal plate - altering its rigid structure and shifting it in your fingers as if it were clay.",
 				"The affected area of metal can be no larger than a 1-foot radius sphere. You cannot target metal that is being worn or carried by another creature. You can bend, tear, and otherwise manipulate the metal as if working with wet clay and it retains its new shape.",
-				"You can shape a sheet of metal this way into crude equipment or objects. However, any item made using this spell cannot match the quality of the work of a proper metalworker or blacksmith using smith’s tools. The work will always be crude. For example, while you can make a gear for a machine with this spell and some time, the gear shall be more likely to fail than a proper gear made with smith’s tools.",
+				"You can shape a sheet of metal this way into crude equipment or objects. However, any item made using this spell cannot match the quality of the work of a proper metalworker or blacksmith using smith's tools. The work will always be crude. For example, while you can make a gear for a machine with this spell and some time, the gear shall be more likely to fail than a proper gear made with smith's tools.",
 				"You can shape the piece of metal into a make-shift shield which will grant you a +2 to your AC like a normal shield. However, a critical hit on you while using this shield will render the improvised shield useless.",
 				"Additionally, you can shape a piece of metal into an improvised sword, spear, or club. A weapon made this way uses your Strength modifier and has a damage die of {@dice 1d4}. The damage type is determined by the weapon: Slashing for a sword, Piercing for a spear, and Bludgeoning for a club.",
 				"The damage done by a weapon made by this spell increases by a die when you reach 5th level ({@dice 1d6}), 11th level ({@dice 1d8}) and 17th level ({@dice 1d10})."
@@ -393,14 +573,14 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn the creature’s type and its maximum hit points. You also learn all its resistances, vulnerabilities, and immunities.",
+						"You learn the creature's type and its maximum hit points. You also learn all its resistances, vulnerabilities, and immunities.",
 						"You learn the direction of the creature and you learn if it is within 1 mile, 100 miles, or beyond that (which also includes other planes of existance).",
 						"You learn the identity of any poisons, diseases, curses, and blessings that are affecting the creature. Successful knowledge checks may also grant you insight into the nature and function of these conditions.",
-						"You learn if the creature’s blood contains any special magic, such as the healing properties of unicorn’s blood or the magical potency of a sorcerer.",
+						"You learn if the creature's blood contains any special magic, such as the healing properties of unicorn's blood or the magical potency of a sorcerer.",
 						"If the blood is mixed with the blood of another creature, the mixture will glow bright red if the two creatures are related by blood."
 					]
 				},
-				"When you cast the spell, if the target is still alive, it feels a tingling sensation in its veins and knows your general direction. However, it doesn’t necessarily know who you are or what you are doing."
+				"When you cast the spell, if the target is still alive, it feels a tingling sensation in its veins and knows your general direction. However, it doesn't necessarily know who you are or what you are doing."
 			],
 			"meta": {
 				"ritual": true
@@ -670,9 +850,9 @@
 				}
 			],
 			"entries": [
-				"You reach out an attempt to tear the blood from a foe’s body. Choose a creature you can see within range. That creature must make a Constitution Saving Throw. On a failure, it takes {@damage 1d10} necrotic damage.",
+				"You reach out an attempt to tear the blood from a foe's body. Choose a creature you can see within range. That creature must make a Constitution Saving Throw. On a failure, it takes {@damage 1d10} necrotic damage.",
 				"Creatures without blood such as constructs are immune to the effects of this spell.",
-				"The spell’s damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}) and 17th level ({@dice 4d10})."
+				"The spell's damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}) and 17th level ({@dice 4d10})."
 			],
 			"damageInflict": [
 				"necrotic"
@@ -736,7 +916,7 @@
 				}
 			],
 			"entries": [
-				"You load the bullet used in the spell’s casting into a firearm and make a ranged weapon attack with it against a creature in the weapon’s range. On hit, the target suffers the weapon attack’s normal effects and must make a Constitution saving throw as electricity suddenly shocks their body. On a failed save, the target is {@condition incapacitated} until the end of their next turn."
+				"You load the bullet used in the spell's casting into a firearm and make a ranged weapon attack with it against a creature in the weapon's range. On hit, the target suffers the weapon attack's normal effects and must make a Constitution saving throw as electricity suddenly shocks their body. On a failed save, the target is {@condition incapacitated} until the end of their next turn."
 			],
 			"conditionInflict": [
 				"incapacitated"
